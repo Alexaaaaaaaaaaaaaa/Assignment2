@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SPAssignment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Content/Assignment2ver3.css" />
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        [ws-template], [ws-children-template] { display: none; }
+        body{background-image: url(background.jpg)}
+    </style>
+    <script type="text/javascript" src="Content/Assignment2ver3.head.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="${Url_Home}">Home page</a></li>
+        <li><a href="${Url_Page1}">Second page</a></li>
+    </ul>
+    <div ws-hole="MainContainer"></div>
+    <div id="main" ws-children-template="Main">
+        <div>
+            <table style="width:40%">
+                <tr>
+                    <th>Expenses:</th>
+                    <th>Income:</th>
+                </tr>
+            </table>
+            <br />
+            <label>Mortage/Rent($): </label> <input type="number" ws-var="Rent" min="0" style="width:4.4%">
+            <label style=" visibility:hidden">aaaaaaaaaaaaaaaaaaa</label>
+            <label>Total income($): </label> <input type="number" ws-var="Income" min="0" style="width:4.4%"><br /><br />
+            <label>Utilities($): </label> <input type="number" ws-var="Utilities" min="0" style="width:4.4%"><br /><br />
+            <label>Vehicle($): </label> <input type="number" ws-var="Vehicle" min="0" style="width:4.4%"><br /><br />
+            <label>Groceries($): </label> <input type="number" ws-var="Groceries" min="0" style="width:4.4%"><br /><br />
+            <label>Toiletries($): </label> <input type="number" ws-var="Toiletries" min="0" style="width:4.4%"><br /><br />
+            <label>Internet($): </label> <input type="number" ws-var="Internet" min="0" style="width:4.4%"><br /><br />
+            <label>Cable & Streamings($): </label> <input type="number" ws-var="Cable" min="0" style="width:4.4%"><br /><br />
+            <label>Cellphone($): </label> <input type="number" ws-var="Phone" min="0" style="width:4.4%"><br /><br />
+            <label>Debt($): </label> <input type="number" ws-var="Debt" min="0" style="width:4.4%"><br /><br />
+            <label>Memberships($): </label> <input type="number" ws-var="Membership" min="0" style="width:4.4%"><br /><br />
+            <label>Health care($): </label> <input type="number" ws-var="Health" min="0" style="width:4.4%"><br /><br />
+            <label>Travel($): </label> <input type="number" ws-var="Travel" min="0" style="width:4.4%"><br /><br />
+            <label>Other($): </label> <input type="number" ws-var="Other" min="0" style="width:4.4%"><br /><br />
+            <button class="btn btn-outline-default" ws-onclick="OnSend">Calculate</button>
+            <div>Your balance: ${Balance}</div>
+        </div>
+    </div>
+    <div id="stock" ws-children-template="Stock">
+        <p>Counter: ${Value}</p>
+        <button ws-onclick="Decrement">-</button>
+        <button ws-onclick="Increment">+</button>
+    </div>
+    <script type="module" src="Content/Assignment2ver3.min.js"></script>
+</body>
+</html>
