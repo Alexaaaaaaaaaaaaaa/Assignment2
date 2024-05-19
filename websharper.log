@@ -1,0 +1,8 @@
+2024-05-19 15:24:40.1825|DEBUG|Program|location of wsfscservice is: C:\Users\L0T3QD\.nuget\packages\websharper.fsharp\7.0.6.458-beta5\tools\net6.0\win-x64 (server side)
+2024-05-19 15:24:40.1825|DEBUG|Program|pipename is: C:\Users\L0T3QD\.nuget\packages\websharper.fsharp\7.0.6.458-beta5\tools\net6.0\win-x64 (server side)
+2024-05-19 15:24:40.1825|DEBUG|Program|Compiling D:\F#\assignments\Assignment2ver3\Assignment2ver3\Assignment2ver3.fsproj
+2024-05-19 15:24:42.4902|TRACE|Program|Server sends: e: D:\F#\assignments\Assignment2ver3\Assignment2ver3\Client.fs(62,17,62,71): warning FS0020: The result of this expression has type 'Doc' and is implicitly ignored. Consider using 'ignore' to discard this value explicitly, e.g. 'expr |> ignore', or 'let' to bind the result to a name, e.g. 'let result = expr'.
+2024-05-19 15:24:42.4902|TRACE|Program|Server sends: n: F# compilation: 00:00:02.3337049
+2024-05-19 15:24:42.7712|TRACE|Program|Server sends: e: WebSharper error WS9001: Failed to deserialize metadata for WebSharper.Charting, Version=7.0.0.0, Culture=neutral, PublicKeyToken=null. Error: Binary format version mismatch, found '7.0-beta1-rev1', expecting '7.0-beta5'
+2024-05-19 15:24:43.6170|TRACE|Program|Server sends: n: Checking project: 00:00:01.1231993
+2024-05-19 15:24:43.6417|TRACE|Program|Server sends: x: 1
